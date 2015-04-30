@@ -9,11 +9,16 @@ Spree Cash On Delivery extension allows web store administrator to ship order be
 
 #### Installation
 
-
-Add spree_cash_on_delivery to your Gemfile:
+Check available branches for specific version of Spree Commerce web store and add to your Gemfile:
 
 ```ruby
-gem 'spree_cash_on_delivery'
+gem 'spree_cash_on_delivery', github: 'musashimm/spree_on_cash_delivery', branch: <BRANCH_NAME>
+```
+
+For example for Spree version 3.0.x it goes:
+
+```ruby
+gem 'spree_cash_on_delivery', github: 'musashimm/spree_on_cash_delivery', branch: 3-0-stable
 ```
 
 Bundle your dependencies and run the installation generator:
@@ -40,3 +45,4 @@ require 'spree_cash_on_delivery/factories'
 ```
 
 Copyright (c) 2015 **spree\_cash\_on\_delivery**, released under the New BSD License
+
